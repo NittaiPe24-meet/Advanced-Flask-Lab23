@@ -13,7 +13,7 @@
 
 				<!-- Header -->
 					<header id="header">
-						<span class="avatar"><img src="{{url_for('static',filename='images/avatar.jpg')}}" alt="" /></span>
+						<span class="avatar"><img src="{{image_link}}" alt="" /></span>
 
             <h1>Description</h1>
             <br>
@@ -37,19 +37,20 @@
 							<section class="thumbnails">
                 
                 <div>
-                      <a href="">
-                        <img src="static/images/thumbs/01.jpg" alt="" />
-                        <h3>Caption... blah blah blah</h3>
+                      <a href="{{image_link}}">
+                        <img src="{{image_link}}" alt="" />
+                        <h2>{{image_link}}</h2>
+                        <h3>{{user_bio}}</h3>
                       </a>
                 
-                      <a href="">
-                        <img src="url_for('static',filename='images/thumbs/02.jpg')" alt="" />
+                      <a href="static/images/thumbs/02.jpg">
+                        <img src="static/images/thumbs/02.jpg" alt="" />
                         <h3>Caption... blah blah blah</h3>
                       </a>
                 </div>    
                 <div>
-                  <a href="">
-                        <img src="{{url_for('static',filename='images/thumbs/03.jpg')}}" alt="" />
+                  <a href="static/images/thumbs/03.jpg">
+                        <img src="static/images/thumbs/03.jpg" alt="" />
                         <h3>Caption... blah blah blah</h3>
                       </a>
                 </div>  
