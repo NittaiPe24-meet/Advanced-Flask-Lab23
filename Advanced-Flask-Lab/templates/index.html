@@ -39,8 +39,8 @@
                 <div>
                       <a href="{{image_link}}">
                         <img src="{{image_link}}" alt="" />
-                        <h2>{{image_link}}</h2>
-                        <h3>{{user_bio}}</h3>
+                        <h2></h2>
+                        <h3>Da logo</h3>
                       </a>
                 
                       <a href="static/images/thumbs/02.jpg">
@@ -57,9 +57,12 @@
 
                 <div>
 
-                	{%for num in range(4): %}
-                	<img src="{{posts[num-1]}}"/>
-                	{% endfor %}
+            <ul>
+                {% for post in posts %}
+                <li> <img src="{{post}}"/> </li>
+                {% endfor %}
+            </ul>
+
                 </div>
 							</section>
 
